@@ -37,8 +37,9 @@
      - CNN-custom was deployed for simplicity as VGG16 only showed marginal improvement.
      - The model was deployed using Flask app on GCP.
      - deployment evidence on local
-  <img width="1440" alt="Screenshot 2024-01-11 at 1 35 46 PM" src="https://github.com/Prabhat2211/Image-Recognition/assets/56192290/0927134b-8a65-4ca6-893b-f5d523e37150">
+ <img width="1440" alt="Screenshot 2024-01-11 at 1 35 46 PM" src="https://github.com/Prabhat2211/Image-Recognition/assets/56192290/0927134b-8a65-4ca6-893b-f5d523e37150">
      -deployment evidence on GCP
-
+<img width="1440" alt="Screenshot 2024-01-11 at 3 28 32 PM" src="https://github.com/Prabhat2211/Image-Recognition/assets/56192290/2772f85e-f71e-4385-9fda-301f87b8a21c">
      - Ref: https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service, https://www.cloudskillsboost.google/focuses/3339?parent=catalog
-     - Issue: The web-cam service didn't work on GCP using opencv library.
+     - Issue1: The web-cam service didn't work on GCP using opencv library.
+     - Issue2: The manual instances can be increased to 5 in app.yaml for 5 concurrent use. But it doesn't work with free GCP account since 4 is the quota limit.  
