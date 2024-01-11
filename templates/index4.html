@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Classification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body>
+    <h1>Webcam Image Capture or Upload</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="static/*" required>
+        <button type="submit">Upload & Predict</button>
+    </form>
+    <img id="video_feed" src="data:image/jpg;base64,{{ image }}" width="640" height="480">
+    {% if filename %}
+        <p>Uploaded Image: {{ filename }}</p>
+        <p>Result: {{ result1 }}</p>
+    {% endif %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
